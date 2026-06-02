@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEMO Dashboard</title>
+<style>
+:root { --brand: #1a3a5c; --bg: #f3f5f9; --card: #fff; --border: #e8eaed; --radius: 12px; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif; background: var(--bg); color: #1a1a2e; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.container { max-width: 640px; width: 100%; padding: 40px 24px; }
+h1 { font-size: 28px; font-weight: 700; text-align: center; margin-bottom: 8px; color: var(--brand); }
+.sub { text-align: center; color: #5f6368; font-size: 14px; margin-bottom: 40px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; margin-bottom: 20px; text-decoration: none; color: inherit; display: block; transition: box-shadow 0.2s, transform 0.2s; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); }
+.card h2 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--brand); }
+.card p { font-size: 14px; color: #5f6368; line-height: 1.6; }
+.badge { display: inline-block; padding: 2px 10px; border-radius: 10px; font-size: 11px; font-weight: 600; background: rgba(26,58,92,0.08); color: var(--brand); margin-bottom: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Demo Dashboard</h1>
+  <p class="sub">RPP広告運用ツール デモ画面</p>
+  <a class="card" href="analytics.html">
+    <span class="badge">Analytics</span>
+    <h2>売上アナリティクス</h2>
+    <p>売上サマリ・商品別分析・広告分析・販促分析・CRM分析・顧客分析を一覧表示するダッシュボード</p>
+  </a>
+  <a class="card" href="rpp.html">
+    <span class="badge">RPP Management</span>
+    <h2>RPP広告運用ツール</h2>
+    <p>ROAS目標設定・戦略倍率・商品別CPC管理・予算配分・戦略カレンダーを管理する運用画面</p>
+  </a>
+</div>
+</body>
+</html>
